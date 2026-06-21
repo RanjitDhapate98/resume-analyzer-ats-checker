@@ -2,7 +2,7 @@
 
 A fully client-side resume analyzer that scores PDF resumes against common ATS rules, detects missing keywords, tracks section completeness, and generates improvement suggestions. No backend, no database, no paid APIs — everything runs in the browser.
 
-**Live demo:** _add your Vercel URL here_
+**Live demo:** https://resume-analyzer-ats-checker.vercel.app/
 
 ## Features
 
