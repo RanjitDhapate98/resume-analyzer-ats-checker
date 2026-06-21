@@ -1,0 +1,84 @@
+.section-checklist-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 28px;
+  border: 1px solid var(--color-border);
+  animation: fadeInUp 0.3s ease;
+}
+
+.section-checklist-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.section-checklist-title {
+  font-size: 18px;
+  color: var(--color-text);
+}
+
+.section-checklist-count {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background-color: var(--color-surface-alt);
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+}
+
+.section-checklist-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.section-checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+}
+
+.section-checklist-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-checklist-item.complete {
+  color: var(--color-text);
+}
+
+.section-checklist-item.complete .section-checklist-icon {
+  background-color: var(--color-success-light);
+  color: var(--color-success);
+}
+
+.section-checklist-item.incomplete {
+  color: var(--color-text-muted);
+}
+
+.section-checklist-item.incomplete .section-checklist-icon {
+  background-color: var(--color-danger-light);
+  color: var(--color-danger);
+}
+
+@media (max-width: 600px) {
+  .section-checklist-list {
+    grid-template-columns: 1fr;
+  }
+}

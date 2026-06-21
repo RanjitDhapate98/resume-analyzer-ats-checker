@@ -1,0 +1,80 @@
+.analysis-history-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 24px 28px;
+  border: 1px solid var(--color-border);
+}
+
+.analysis-history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.analysis-history-title {
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.analysis-history-clear {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.analysis-history-clear:hover {
+  background-color: var(--color-danger-light);
+  color: var(--color-danger);
+}
+
+.analysis-history-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.analysis-history-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 4px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 13px;
+  gap: 12px;
+}
+
+.analysis-history-item:last-child {
+  border-bottom: none;
+}
+
+.analysis-history-name {
+  color: var(--color-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.analysis-history-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.analysis-history-score {
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+.analysis-history-date {
+  color: var(--color-text-muted);
+  font-size: 12px;
+}

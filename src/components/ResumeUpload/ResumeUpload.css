@@ -1,0 +1,103 @@
+.resume-upload-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 28px;
+  border: 1px solid var(--color-border);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.resume-upload-title {
+  font-size: 20px;
+  color: var(--color-text);
+}
+
+.resume-upload-subtitle {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.resume-upload-dropzone {
+  margin-top: 20px;
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.resume-upload-dropzone:hover,
+.resume-upload-dropzone:focus-visible {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+.resume-upload-dropzone.dragging {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+.resume-upload-dropzone.loading {
+  cursor: progress;
+}
+
+.resume-upload-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.resume-upload-icon {
+  color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.resume-upload-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text);
+  word-break: break-word;
+}
+
+.resume-upload-text-secondary {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+.resume-upload-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.resume-upload-spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.resume-upload-error {
+  margin-top: 14px;
+  color: var(--color-danger);
+  background-color: var(--color-danger-light);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+}
